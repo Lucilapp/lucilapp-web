@@ -1,0 +1,160 @@
+body {
+    font-family: 'Mukta', sans-serif; /* Usar la fuente Mukta */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #a2ccfc, #56a3fc);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 0; /* Espaciado reducido */
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Centrar verticalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra del header */
+}
+
+.logo-container {
+    display: flex; /* Usar flexbox para el logo y el título */
+    align-items: center; /* Centrar verticalmente */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transición para la animación */
+}
+
+.logo {
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.imgLogo {
+    width: 100px; /* Tamaño del logo */
+    height: 100px; /* Tamaño del logo */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición para el logo */
+}
+
+.imgLogo:hover {
+    transform: scale(1.2); /* Aumentar el logo y rotar ligeramente al pasar el mouse */
+    filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.7)); /* Sombra alrededor del logo */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño del texto */
+    color: #fff; /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra del texto */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición */
+}
+
+header h1:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    color: #6ce6f7; /* Color dorado al pasar el mouse */
+}
+
+nav {
+    margin-left: auto; /* Empujar la navegación hacia la derecha */
+}
+
+nav ul {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usar flexbox para alinear elementos en fila */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.2em; /* Tamaño del texto de navegación */
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Color dorado al pasar el mouse */
+}
+
+
+nav ul li a:hover {
+    color: #6ce6f7; /* Color dorado al pasar el mouse */
+}
+
+section {
+    padding: 30px 0;
+}
+
+section h2 {
+    font-size: 2em; /* Tamaño del título de sección */
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Sombra del título */
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+section h2:hover {
+    color: #6ce6f7; /* Cambiar color al pasar el mouse */
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+}
+
+.features-section h2,
+.contact-section h2 {
+    font-size: 2.5em; /* Aumentar tamaño del encabezado */
+}
+
+.features-section ul li,
+.contact-section ul li,
+.contact-section p {
+    font-size: 1.3em; /* Aumentar tamaño de la fuente */
+}
+
+.tasks-list {
+    list-style: none; /* Eliminar viñetas predeterminadas */
+    padding-left: 0; /* Sin padding */
+}
+
+.tasks-list li {
+    position: relative; /* Posicionar el texto relativo */
+    padding-left: 30px; /* Espacio a la izquierda para el disco */
+    font-size: 1.3em; /* Tamaño de la fuente */
+}
+
+.tasks-list li::before {
+    content: ''; /* Usar un espacio vacío como contenido */
+    position: absolute; /* Posición absoluta para que esté al lado */
+    left: 0; /* Alinear a la izquierda */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar para centrar correctamente */
+    width: 10px; /* Tamaño del disco */
+    height: 10px; /* Tamaño del disco */
+    border-radius: 50%; /* Hacer el disco redondo */
+    background-color: #4a90e2; /* Color del disco */
+}
